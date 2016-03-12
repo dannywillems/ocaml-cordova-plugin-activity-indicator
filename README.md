@@ -5,6 +5,7 @@ Binding to
 
 [Example
 application](https://github.com/dannywillems/ocaml-cordova-plugin-activityindicator-example).
+**Not developed**
 
 ## What does cordova-plugin-activityindicator do ?
 
@@ -28,13 +29,13 @@ We don't provide a *Activityindicator* variable in this plugin (as said in the o
 documentation on js_of_ocaml). If we did, *Activityindicator* will be set to **undefined**
 because the *Activityindicator* object doesn't exist when we create the variable.
 
-Instead, we provide a function *activityindicator* of type *unit -> activityindicator Js.t* which creates the
-binding to the *Activityindicator* object. You must call it when the deviceready
+Instead, we provide a function *activity_indicator* of type *unit -> activity_indicator Js.t* which creates the
+binding to the *Activityindicator* javascript object. You must call it when the deviceready
 event is handled, eg
 
 ```OCaml
 let on_device_ready =
-  let activityindicator = Activityindicator.activityindicator () in
+  let activity_indicator = Activityindicator.activity_indicator () in
   (* Some code *)
 
 let _ =
