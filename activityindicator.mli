@@ -1,7 +1,13 @@
-class type activity_indicator =
+(* -------------------------------------------------------------------------- *)
+class activity_indicator : Ojs.t ->
   object
-    method show : Js.js_string Js.t -> unit Js.meth
-    method hide : unit Js.meth
+    inherit Ojs.obj
+    method show : string -> unit
+    method hide : unit
   end
+(* -------------------------------------------------------------------------- *)
 
-val activity_indicator : unit -> activity_indicator Js.t
+(* -------------------------------------------------------------------------- *)
+val t : unit -> activity_indicator
+[@@js.get "ActivityIndicator"]
+(* -------------------------------------------------------------------------- *)
