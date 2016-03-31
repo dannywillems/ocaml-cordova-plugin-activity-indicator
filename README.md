@@ -39,16 +39,16 @@ The plugin creates a new object called *ActivityIndicator*, but the object is
 available when the *deviceready* event is handled.
 
 We don't provide a *activity_indicator* variable in this plugin (as said in the official
-documentation on js_of_ocaml). If we did, *ActivityIndicator* will be set to **undefined**
+documentation on js_of_ocaml). If we did, *activity_indicator* will be set to **undefined**
 because the *Activityindicator* object doesn't exist when we create the variable.
 
-Instead, we provide a function *t* of type *unit -> activity_indicator* which creates the
+Instead, we provide a function *Activity_indicator.t* of type *unit -> Activity_indicator.activity_indicator* which creates the
 binding to the *Activityindicator* javascript object. You must call it when the deviceready
 event is handled, eg
 
 ```OCaml
 let on_device_ready _ =
-  let activity_indicator = Activityindicator.t () in
+  let activity_indicator = Activity_indicator.t () in
   (* Some code *)
 
 let _ =
