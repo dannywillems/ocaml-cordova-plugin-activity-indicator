@@ -25,8 +25,8 @@ Source: [cordova-plugin-activityindicator](https://github.com/Initsogar/cordova-
 The plugin creates a new object called *Activityindicator*, but the object is
 available when the *deviceready* event is handled.
 
-We don't provide a *Activityindicator* variable in this plugin (as said in the official
-documentation on js_of_ocaml). If we did, *Activityindicator* will be set to **undefined**
+We don't provide a *activity_indicator* variable in this plugin (as said in the official
+documentation on js_of_ocaml). If we did, *activity_indicator* will be set to **undefined**
 because the *Activityindicator* object doesn't exist when we create the variable.
 
 Instead, we provide a function *activity_indicator* of type *unit -> activity_indicator Js.t* which creates the
@@ -34,8 +34,8 @@ binding to the *Activityindicator* javascript object. You must call it when the 
 event is handled, eg
 
 ```OCaml
-let on_device_ready =
-  let activity_indicator = Activityindicator.activity_indicator () in
+let on_device_ready _ =
+  let activity_indicator = Activity_indicator.activity_indicator () in
   (* Some code *)
 
 let _ =
