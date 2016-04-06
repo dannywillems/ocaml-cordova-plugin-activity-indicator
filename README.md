@@ -1,5 +1,9 @@
 # ocaml-cordova-plugin-activityindicator
 
+Continuous integration:
+* Compilation
+  - master branch: [![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-activityindicator.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-activityindicator)
+
 Binding to
 [cordova-plugin-activityindicator](https://github.com/Initsogar/cordova-activityindicator)
 
