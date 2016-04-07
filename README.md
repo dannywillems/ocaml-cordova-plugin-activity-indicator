@@ -62,13 +62,13 @@ cordova plugin add https://github.com/Initsogar/cordova-activityindicator
 The plugin creates a new object called *ActivityIndicator*, but the object is
 available when the *deviceready* event is handled.
 
-We provide a function *Activity_indicator.t* of type *unit -> Activity_indicator.activity_indicator* which creates the
+We provide a function *Cordova_activity_indicator.t* of type *unit -> Cordova_activity_indicator.activity_indicator* which creates the
 binding to the *Activityindicator* javascript object. You must call it when the deviceready
 event is handled, eg (with js_of_ocaml)
 
 ```OCaml
 let on_device_ready _ =
-  let activity_indicator = Activity_indicator.t () in
+  let activity_indicator = Cordova_activity_indicator.t () in
   (* Some code *)
 
 let _ =
