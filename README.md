@@ -6,10 +6,6 @@
 Binding to
 [cordova-plugin-activityindicator](https://github.com/Initsogar/cordova-activityindicator)
 
-[Example
-application](https://github.com/dannywillems/ocaml-cordova-plugin-activityindicator-example).
-**Not developed**
-
 ## What does cordova-plugin-activityindicator do ?
 
 ```
