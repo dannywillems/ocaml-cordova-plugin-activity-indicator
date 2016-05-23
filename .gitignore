@@ -1,4 +1,4 @@
 *.cma
 *.cmo
-.*cmi
-.*ml
+*.cmi
+*.ml
