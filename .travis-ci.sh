@@ -14,7 +14,7 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-URL=https://github.com/dannywillems/ocaml-cordova-plugin-activityindicator.git
+URL=https://github.com/dannywillems/ocaml-cordova-plugin-activity-indicator.git
 PLUGIN_PIN=cordova-plugin-activity-indicator
 
 export OPAMYES=1

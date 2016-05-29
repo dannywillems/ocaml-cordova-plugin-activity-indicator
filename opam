@@ -1,12 +1,12 @@
 opam-version: "1.2"
-name:         "ocaml-cordova-plugin-activityindicator"
+name:         "ocaml-cordova-plugin-activity-indicator"
 maintainer:   "Danny Willems <contact@danny-willems.be>"
 author:       "Danny Willems <contact@danny-willems.be>"
 
-homepage:     "https://github.com/dannywillems/ocaml-cordova-plugin-activityindicator"
-bug-reports:  "https://github.com/dannywillems/ocaml-cordova-plugin-activityindicator/issues"
+homepage:     "https://github.com/dannywillems/ocaml-cordova-plugin-activity-indicator"
+bug-reports:  "https://github.com/dannywillems/ocaml-cordova-plugin-activity-indicator/issues"
 
-dev-repo:     "https://github.com/dannywillems/ocaml-cordova-plugin-activityindicator"
+dev-repo:     "https://github.com/dannywillems/ocaml-cordova-plugin-activity-indicator"
 
 license:      "LGPL-3.0 with OCaml linking exception"
 

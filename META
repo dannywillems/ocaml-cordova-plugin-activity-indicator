@@ -1,3 +1,3 @@
 version = "dev"
-description = "Binding to the activity indicator cordova plugin using gen_js_api"
+description = "Binding to https://github.com/Initsogar/cordova-activityindicator using gen_js_api"
 archive(byte) = "cordova_activity_indicator.cma"
