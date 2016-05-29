@@ -3,7 +3,7 @@ class activity_indicator : Ojs.t ->
   object
     inherit Ojs.obj
     method show : string -> unit
-    method hide : unit
+    method hide : unit -> unit
   end
 (* -------------------------------------------------------------------------- *)
 
