@@ -1,13 +1,7 @@
 (* -------------------------------------------------------------------------- *)
-class activity_indicator : Ojs.t ->
-  object
-    inherit Ojs.obj
-    method show : string -> unit
-    method hide : unit -> unit
-  end
-(* -------------------------------------------------------------------------- *)
+val show : string -> unit
+[@@js.global "ActivityIndicator.show"]
 
-(* -------------------------------------------------------------------------- *)
-val t : unit -> activity_indicator
-[@@js.get "ActivityIndicator"]
+val hide : unit -> unit
+[@@js.global "ActivityIndicator.hide"]
 (* -------------------------------------------------------------------------- *)
